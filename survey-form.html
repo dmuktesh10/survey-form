@@ -3,7 +3,43 @@
   <head>
     <link rel="stylesheet" type="text/css"href="survey-form.css">
   </head>
-  <body>
-
+  <body background='https://www.bing.com/az/hprichbg/rb/NLNorway_EN-IN6829519898_1920x1080.jpg'>
+    <h1 id='title'>Survey Form</h1>
+    <div id='the_form'>
+      <p id='description'>Superhero survey form.</p>
+      <form id='survey-form'>
+        <p><label id='name-label'>Name:</label><input type='text' id='name' required placeholder="Your Name"></p>
+        <p><label id='email-label'>Email:</label><input type='email' id='email' required placeholder="Your email e.g abc@xyz.dg"></p>
+        <p><label id='number-label'>Age:</label> <input type='number' id='number' min='0' max='100' placeholder="Your age e.g 56">yrs.</p>
+        <p>
+          <label> You are: 
+            <select id='dropdown'>
+              <option value="minor">Minor</option>
+              <option value="adult">Adult</option>
+              <option value="senior-citizen">Senior Citizen</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          DC or Marvel:
+          <fieldset id='franchaise'>
+            <label>DC</label><input type="radio" value='Dc' name='franchaise'>
+            <label>Marvel</label><input type="radio" value='Marvel' name='franchaise'>
+          </fieldset>
+        </p>
+        <p>
+          Pick your team:<br>
+          <input type='checkbox' value='0'id='ironman' name='ironman'><label for='ironman'>ironman</label><br>
+          <input type='checkbox' value='1'id='batman' name='batman'><label for='batman'>batman</label><br>
+          <input type='checkbox' value='2'id='superman' name='superman'><label for='superman'>superman</label><br>
+          <input type='checkbox' value='3'id='wonderwoman' name='wonderwoman'><label for='wonderwoman'>wonderwoman</label><br>
+          <input type='checkbox' value='4'id='hulk' name='hulk'><label for='hulk'>hulk</label><br>
+          <input type='checkbox' value='5'id='dr strange' name='dr strange'><label for='dr strange'>dr strange</label><br>
+          <input type='checkbox' value='6'id='arrow' name='arrow'><label for='arrow'>arrow</label><br>
+        </p>
+        <p>Comments:<textarea></textarea></p>
+        <p><button id='submit' type='submit'>Submit</button></p>
+      </form>
+    </div>
   </body>
 </html>
